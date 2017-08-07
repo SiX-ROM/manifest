@@ -11,13 +11,7 @@
           fetch="https://bitbucket.org/" />
   <remote name="sixrom"
            fetch="https://github.com/SiX-ROM/" />
-  <remote name="sosrom"
-           fetch="https://github.com/SoS-ROM/" />
-  <remote name="sixref"
-           fetch="https://github.com/SiXROM/" />
-  <remote name="pure"
-           fetch="https://github.com/PureNexusProject/" />
-  <default revision="refs/tags/android-7.1.2_r27"
+  <default revision="refs/tags/android-7.1.2_r33"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -88,8 +82,8 @@
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="sixrom" revision="n-mr2.1" />
 
   <!-- Tools Source -->
-  <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixref" revision="n-mr2.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="matthewdalex/arm-eabi-6.x" remote="bb" revision="master" />
+  <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixrom" revision="n-mr2.1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="R3Ds/arm-eabi-6.x" remote="bb" revision="master" />
 
   <!-- Google AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
